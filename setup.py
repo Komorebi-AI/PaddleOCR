@@ -14,7 +14,8 @@
 
 from setuptools import setup
 from io import open
-from paddleocr import VERSION
+
+VERSION = '2.7.0.3'
 
 def load_requirements(file_list=None):
     if file_list is None:
@@ -32,7 +33,6 @@ def readme():
     with open('doc/doc_en/whl_en.md', encoding="utf-8-sig") as f:
         README = f.read()
     return README
-
 
 setup(
     name='paddleocr',
