@@ -269,7 +269,7 @@ def main():
     if arch_config["algorithm"] == "SVTR" and arch_config["Head"][
             "name"] != 'MultiHead':
         input_shape = config["Eval"]["dataset"]["transforms"][-2][
-            'SVTRRecResizeImg']['image_shape']
+            'RecResizeImg']['image_shape']
     else:
         input_shape = None
 
