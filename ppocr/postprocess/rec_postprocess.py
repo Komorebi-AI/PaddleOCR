@@ -96,7 +96,7 @@ class BaseRecLabelDecode(object):
             if self.reverse:  # for arabic rec
                 text = self.pred_reverse(text)
 
-            result_list.append((text, np.mean(conf_list).tolist()))
+            result_list.append((text, conf_list))
         return result_list
 
     def get_ignored_tokens(self):
